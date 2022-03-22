@@ -1,3 +1,4 @@
+export { }
 var sname: string = "John";
 var score1: number = 50;
 var score2: number = 42.50;

@@ -1,3 +1,5 @@
+"use strict";
+exports.__esModule = true;
 var sname = "John";
 var score1 = 50;
 var score2 = 42.50;

@@ -1,3 +1,5 @@
+"use strict";
+exports.__esModule = true;
 var text = "sample text";
 console.log(text);
 var num = 25.60;

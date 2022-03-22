@@ -1,3 +1,4 @@
+export { }
 //variable:
 
 // var box;
@@ -48,16 +49,6 @@ function getProduct(id) : Product{
     }
   }
 
-  var product = getProduct(1);
-console.log(`The product ${product.Name} costs $${product.price}`);
-
-const showProduct = (name: string, price:number)  => {
-    console.log(`The product ${name} costs ${price}$.`);
-  };
-
-  const product = getProduct(1);
-showProduct(product.price, product.name);
-
-
+  
 
 

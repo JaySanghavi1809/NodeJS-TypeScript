@@ -1,3 +1,4 @@
+export { }
 // Number Data-Type:----
 var first = 12.0; // number   
 var second = 0x37CF; // hexadecimal  
