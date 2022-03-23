@@ -39,7 +39,7 @@ class Circle extends Shape {
 
 
 class Root { 
-    str:string; 
+    // str:string; 
  } 
  
  class Child extends Root {} 

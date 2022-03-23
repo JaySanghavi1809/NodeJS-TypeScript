@@ -113,11 +113,11 @@ EmployeeInfo.location = "BHAVNAGAR"
 // Example: Multiple Interface Inheritance:
 
 interface IFeature1{
-    getFeature1();
+    // getFeature1();
 }
 
 interface IFeature2{
-    getFeature2();
+    // getFeature2();
 }
 
 class Feature implements IFeature1, IFeature2{

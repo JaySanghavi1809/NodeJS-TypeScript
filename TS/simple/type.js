@@ -1,33 +1,34 @@
-export { }
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // Number Data-Type:----
-var first = 12.0; // number   
-var second = 0x37CF; // hexadecimal  
-var third = 255; // octal  
-var fourth = 57; // binary   
+let first = 12.0; // number   
+let second = 0x37CF; // hexadecimal  
+let third = 0o377; // octal  
+let fourth = 0b111001; // binary   
 // console.log(first);           // 123  
 // console.log(second);          // 14287  
 // console.log(third);           // 255  
 // console.log(fourth);          // 57 
 //String DataType:----
-var empName = "Rohan";
-var empDept = "IT";
+let empName = "Rohan";
+let empDept = "IT";
 // Before-ES6  
-var output1 = empName + " works in the " + empDept + " department.";
+let output1 = empName + " works in the " + empDept + " department.";
 // After-ES6  
-var output2 = "".concat(empName, " works in the ").concat(empDept, " department.");
+let output2 = `${empName} works in the ${empDept} department.`;
 // console.log(output1);//Rohan works in the IT department.   
 // console.log(output2);//Rohan works in the IT department.  
-var isDone = false;
+let isDone = false;
 // console.log(isDone)
 // Void:
 function helloUser() {
     alert("This is a welcome message");
 }
-var tempNum = undefined;
-tempNum = null;
+let tempNum = undefined;
+// tempNum = null;      
 // tempNum = 123;      //Error   
 // Null
-var num = null;
+// let num: number = null;  
 // let bool: boolean = null;   
 // let str: string = null;  
 // console.log(num)
@@ -36,14 +37,14 @@ var num = null;
 // let bool: boolean = undefined;  
 // let str: string = undefined; 
 // Any Type:
-var val = 'Hi';
+let val = 'Hi';
 val = 555; // OK  
-val = true; // OK          
+val = true; // OK     
 // 
 function ProcessData(x, y) {
     return x + y;
 }
-var result;
+let result;
 result = ProcessData("Hello ", "Any!"); //Hello Any!  
 // result = ProcessData(2, 3); //5
 // console.log(result)
@@ -53,6 +54,10 @@ var alphas;
 alphas = ["1", "2", "3", "4"];
 // console.log(alphas[0]); 
 // console.log(alphas[1]);
+var list = [1, 3, 5];
+// console.log(list[2])
+var list = [1, 3, 5];
+// console.log(list[2])
 //tuple
 var mytuple = [10, "Hello"]; //create a  tuple 
 // console.log(mytuple[0]) 
@@ -64,7 +69,7 @@ mytuple.push(12); // append value to the tuple
 var customer = {
     firstName: "Tom",
     lastName: "Hanks",
-    sayHi: function () { return "Hi there"; }
+    sayHi: () => { return "Hi there"; }
 };
 //  console.log("Customer Object ") 
 //  console.log(customer.firstName) 
@@ -73,22 +78,21 @@ var customer = {
 var employee = {
     firstName: "Jim",
     lastName: "Blakes",
-    sayHi: function () { return "Hello!!!"; }
+    sayHi: () => { return "Hello!!!"; }
 };
 //  console.log("Employee  Object ") 
 //  console.log(employee.firstName);
 //  console.log(employee.lastName);
 //classes
-var Student = /** @class */ (function () {
-    function Student(_RollNo, Name) {
+class Student {
+    constructor(_RollNo, Name) {
         this.RollNo = _RollNo;
         this.Name = Name;
     }
-    Student.prototype.showDetails = function () {
+    showDetails() {
         console.log(this.RollNo + " : " + this.Name);
-    };
-    return Student;
-}());
+    }
+}
 // Enums
 var Color;
 (function (Color) {
@@ -97,17 +101,21 @@ var Color;
     Color[Color["Blue"] = 2] = "Blue";
 })(Color || (Color = {}));
 ;
-var c;
+let c;
 c = Color.Red;
 // console.log(c)
 // TypeScript and Object Orientation:
-var Greeting = /** @class */ (function () {
-    function Greeting() {
+class Greeting {
+    greet() {
+        //    console.log("Hello World!!!") 
     }
-    Greeting.prototype.greet = function () {
-        console.log("Hello World!!!");
-    };
-    return Greeting;
-}());
+}
 var obj = new Greeting();
 obj.greet();
+//Generic:
+function identity(arg) {
+    return arg;
+}
+let student = {};
+student.name = "Rohit"; // Correct  
+student.code = 123; // Correct

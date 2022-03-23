@@ -12,13 +12,13 @@ export { }
 
 
 // variable with function:
-function demod(id){
-    return {
-        id:id,
-        name:`Awesome Gadget ${id}`,
-        price:99.5
-    }
-} 
+// function demod(id){
+//     return {
+//         id:id,
+//         name:`Awesome Gadget ${id}`,
+//         price:99.5
+//     }
+// } 
 
 // getProduct():
 //  const productInfo = getProduct(1);
@@ -41,13 +41,13 @@ interface Product{
     price: number
 };
 
-function getProduct(id) : Product{
-    return {
-      id: id,
-      name: `Awesome Gadget ${id}`,
-      price: 99.5
-    }
-  }
+// function getProduct(id) : Product{
+//     return {
+//       id: id,
+//       name: `Awesome Gadget ${id}`,
+//       price: 99.5
+//     }
+//   }
 
   
 

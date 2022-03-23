@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var sname = "John";
 var score1 = 50;
 var score2 = 42.50;
@@ -22,16 +22,15 @@ num = "12";
 // console.log(num);  
 // Variable Scope:
 var global_num = 12; //global variable 
-var Numbers = /** @class */ (function () {
-    function Numbers() {
+class Numbers {
+    constructor() {
         this.num_val = 13; //class variable 
     }
-    Numbers.prototype.storeNum = function () {
+    storeNum() {
         var local_num = 14; //local variable 
-    };
-    Numbers.sval = 10; //static field 
-    return Numbers;
-}());
+    }
+}
+Numbers.sval = 10; //static field 
 console.log("Global num: " + global_num);
 console.log("static number : " + Numbers.sval); //static variable  
 var obj = new Numbers();

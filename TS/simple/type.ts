@@ -33,14 +33,15 @@ let isDone: boolean = false;
 // Void:
 function helloUser(): void {  
     alert("This is a welcome message");  
-    }  
+    } 
+     
 
 let tempNum: void = undefined;  
-tempNum = null;      
+// tempNum = null;      
 // tempNum = 123;      //Error   
 
 // Null
-let num: number = null;  
+// let num: number = null;  
 // let bool: boolean = null;   
 // let str: string = null;  
 // console.log(num)
@@ -53,7 +54,8 @@ let num: number = null;
 // Any Type:
 let val: any = 'Hi';  
       val = 555;   // OK  
-      val = true;   // OK          
+      val = true;   // OK     
+     
 
 // 
 
@@ -74,6 +76,11 @@ var alphas:string[];
 alphas = ["1","2","3","4"] 
 // console.log(alphas[0]); 
 // console.log(alphas[1]);
+var list : number[] = [1, 3, 5];  
+// console.log(list[2])
+
+var list : Array<number> = [1, 3, 5];
+// console.log(list[2])
 
 //tuple
 var mytuple = [10,"Hello"]; //create a  tuple 
@@ -149,8 +156,38 @@ c = Color.Red;
 // TypeScript and Object Orientation:
 class Greeting { 
     greet():void { 
-       console.log("Hello World!!!") 
+    //    console.log("Hello World!!!") 
     } 
  } 
  var obj = new Greeting(); 
  obj.greet();
+ 
+ //Generic:
+ function identity<T>(arg: T): T {  
+    return arg;  
+}  
+// var one = identity<string>("myString");  
+// var two = identity<number>( 100 );  
+// var three = identity<Boolean>(true );  
+// console.log(one)
+// console.log(three)
+// let Bike = { Company1: 'Honda',
+//              Company2: 'Hero',
+//              Company3: 'Royal Enfield'
+//            };
+// delete Bike.Company3;
+// console.log(Bike);   // 
+
+// let arr = [1, 2, 3];
+// console.log( arr instanceof Array ); // true
+// console.log( arr instanceof String ); // false
+
+
+
+interface Student {   
+    name: string;   
+    code: number;   
+}  
+let student = <Student> { };   
+student.name = "Rohit"; // Correct  
+student.code = 123; // Correct
