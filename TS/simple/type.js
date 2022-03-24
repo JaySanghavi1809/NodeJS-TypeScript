@@ -90,7 +90,7 @@ class Student {
         this.Name = Name;
     }
     showDetails() {
-        console.log(this.RollNo + " : " + this.Name);
+        // console.log(this.RollNo + " : " + this.Name);  
     }
 }
 // Enums
@@ -119,3 +119,32 @@ function identity(arg) {
 let student = {};
 student.name = "Rohit"; // Correct  
 student.code = 123; // Correct
+let isDialogOpen = true;
+let marks = 100;
+let myname = "jay";
+let fullName = `my name is ${myname}`;
+let user = {
+    name: "jay sanghavi",
+    state: "gujarat"
+};
+let names = ["jay", "rohan", "rahul"];
+let xyz = [111, 222, 333];
+// generics:
+let fruites = ["Mango", "Apple"];
+console.log(user);
+//tuple:
+let user1 = ["jay", 20];
+// void: they not allow to  return value 
+function sayHello() {
+    console.log("Good morning");
+    //return "hello"
+}
+sayHello();
+let z = 111;
+z = true;
+z = "jay";
+//diff unknow and any:
+let a = "jay";
+// a.rk() //trow error
+let b = "rk";
+b.mk(); //not error

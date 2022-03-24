@@ -29,16 +29,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //     console.log(status);  
 // }  
 // checkStatus(AppStatus.ONSTOP);  
-var Weekend;
-(function (Weekend) {
-    Weekend[Weekend["Friday"] = 1] = "Friday";
-    Weekend[Weekend["Saturday"] = getDate('Dominoz')] = "Saturday";
-    Weekend[Weekend["Sunday"] = Weekend.Saturday * 40] = "Sunday";
-})(Weekend || (Weekend = {}));
-function getDate(day) {
-    if (day === 'Dominoz') {
-        return 3;
-    }
-}
-console.log(Weekend.Saturday);
-console.log(Weekend.Sunday);
+// enum Weekend {  
+//     Friday = 1,  
+//     Saturday = getDate('Dominoz'),  
+//     Sunday = Saturday * 40  
+//   }  
+//   function getDate(day : string): number {  
+//       if (day === 'Dominoz') {  
+//           return 3;  
+//       }  
+//   }  
+//   console.log(Weekend.Saturday);   
+//   console.log(Weekend.Sunday);  

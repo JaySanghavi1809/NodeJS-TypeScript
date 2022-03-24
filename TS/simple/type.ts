@@ -140,7 +140,7 @@ class Student
     }  
     showDetails()  
     {  
-        console.log(this.RollNo + " : " + this.Name);  
+        // console.log(this.RollNo + " : " + this.Name);  
     } 
      
 }
@@ -191,3 +191,38 @@ interface Student {
 let student = <Student> { };   
 student.name = "Rohit"; // Correct  
 student.code = 123; // Correct
+
+
+let isDialogOpen: boolean = true;
+let marks:number = 100;
+let myname:string = "jay";
+let fullName:string = `my name is ${myname}`
+let user:object = {
+    name:"jay sanghavi",
+    state:"gujarat"
+};
+
+let names:string[] = ["jay","rohan","rahul"]
+let xyz:number[] = [111,222,333];
+// generics:
+let fruites:Array<string> = ["Mango","Apple"];
+console.log(user)
+
+//tuple:
+let user1:[string,number] = ["jay",20];
+
+// void: they not allow to  return value 
+function sayHello():void{
+    console.log("Good morning")
+    //return "hello"
+}
+sayHello()
+
+let z:unknown = 111;
+z=true;
+z= "jay"
+//diff unknow and any:
+let a:unknown = "jay";
+// a.rk() //trow error
+let b:any = "rk";
+b.mk() //not error

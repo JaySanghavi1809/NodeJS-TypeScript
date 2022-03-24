@@ -88,4 +88,4 @@ function showFruitName(fruitsName: FruitsName): void {
 }  
 showFruitName('Mango');   //OK - Print 'Mango'  
 //Compile Time Error  
-showFruitName('Banana');  
+// showFruitName('Banana');  

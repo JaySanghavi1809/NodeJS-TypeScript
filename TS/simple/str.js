@@ -53,4 +53,4 @@ function showFruitName(fruitsName) {
 }
 showFruitName('Mango'); //OK - Print 'Mango'  
 //Compile Time Error  
-showFruitName('Banana');
+// showFruitName('Banana');  

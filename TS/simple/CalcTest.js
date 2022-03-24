@@ -1,3 +1,4 @@
+"use strict";
 /// <reference path = "Calc.d.ts" /> 
 var obj = new TutorialPoint.Calc();
 obj.doSum(10); // compiler error 

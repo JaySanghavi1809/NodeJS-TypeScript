@@ -48,7 +48,7 @@ for (i = 0; i < arrType.length; i++) {
     // console.log(arrType[i])
 }
 arrType = ["India", "America", "England"];
-// console.log("String type array:")    
+console.log("String type array:");
 for (i = 0; i < arrType.length; i++) {
     //    console.log(arrType[i]);  
 }

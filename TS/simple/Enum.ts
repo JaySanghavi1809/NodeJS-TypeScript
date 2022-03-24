@@ -37,16 +37,16 @@ export { }
 // checkStatus(AppStatus.ONSTOP);  
 
 
-enum Weekend {  
-    Friday = 1,  
-    Saturday = getDate('Dominoz'),  
-    Sunday = Saturday * 40  
-  }  
+// enum Weekend {  
+//     Friday = 1,  
+//     Saturday = getDate('Dominoz'),  
+//     Sunday = Saturday * 40  
+//   }  
     
-  function getDate(day : string): number {  
-      if (day === 'Dominoz') {  
-          return 3;  
-      }  
-  }  
-  console.log(Weekend.Saturday);   
-  console.log(Weekend.Sunday);  
+//   function getDate(day : string): number {  
+//       if (day === 'Dominoz') {  
+//           return 3;  
+//       }  
+//   }  
+//   console.log(Weekend.Saturday);   
+//   console.log(Weekend.Sunday);  

@@ -49,3 +49,4 @@ class Person extends Student {
 }  
 let joeRoot: Person = new Person(1, "JoeRoot", "CS");  
 console.log(joeRoot.getElevatorPitch());
+

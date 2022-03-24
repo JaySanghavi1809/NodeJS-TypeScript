@@ -143,4 +143,37 @@ class Car extends Feature{
 let car = new Car();
 car.getCarFeature();
 
+interface User {
+    id:number,
+    name:string,
+    email:string,
+    isNew?:boolean
+}
+
+let users:User[] = [
+    {
+        id:1,
+        name:"jay",
+        email:"jayexample@gmail.com"
+    },
+    {
+        id:2,
+        name:"rohan",
+        email:"rohanexmple@gmail.com"
+    },
+    
+];
+//function based interfaces:
+function addUser(user:User){
+    users.push(user);
+}
+
+function getUser(index:number):User{
+    return users[index]
+}
+
+addUser({id:2,name:"jaydeep",email:"jaydeep@gmail.com"})
+// console.log(users)
+console.log(getUser(0))
+
 
