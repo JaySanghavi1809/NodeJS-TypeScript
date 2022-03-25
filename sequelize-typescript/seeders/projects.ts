@@ -1,3 +1,16 @@
 export const projects = [
-    //Add projects here
+    {
+        title: "Site Upgrade - Login Page",
+        status: "Active"
+    },
+
+    {
+        title: "Site Upgrade - User Dashboard",
+        status: "Active"
+    },
+
+    {
+        title: "Database Maintenance",
+        status: "Complated"
+    },
 ]
